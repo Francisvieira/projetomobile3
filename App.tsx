@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Image, StyleSheet, Text, View } from 'react-native';
+import {Image, ScrollView, ScrollViewBase, StyleSheet, Text, View, _ScrollView } from 'react-native';
 import { estilo } from './css/Styles';
 export default function App() {
   return (
 
     <View style={estilo.container}>
-      <StatusBar style="auto" />
+      
 
       <View style={estilo.header}>
         <View style={estilo.perfil}>
@@ -15,7 +15,7 @@ export default function App() {
 
         <View style={estilo.titulo}>    
           <Text style ={estilo.nome}>Francisco</Text> 
-          <Text style={estilo.descricao}>lorem ipsum </Text>
+          <Text style={estilo.descricao}>lorem Ipsum  </Text>
         </View>
 
         <View style={estilo.pesquisa}>  
@@ -23,6 +23,79 @@ export default function App() {
         </View>
 
       </View>
+      {/*~~~~~~~~~~~~~~~~~~ Fim do header ~~~~~~~~~~~~~~*/}
+
+      {/*inicio do stories*/}
+
+      <View style={estilo.stories} >
+        <Text style={estilo.titulostories}>
+          Stories
+        </Text>
+        {/* fim do titulo stories */}
+
+        <ScrollView horizontal={true} style={estilo.scrollstories}>
+          <View>
+            <Text style={estilo.blackbox}>
+              Live
+            </Text>
+            <Image source={{uri:"https://image.freepik.com/fotos-gratis/foto-vertical-de-um-caminhante-na-trilha-de-hardergrat-nos-alpes-suicos_181624-39720.jpg"}} style={estilo.imgstories}/>
+            <View style={estilo.txticon}>
+              <Text style={estilo.txt}>Savana</Text>
+              <Image source={require("./assets/iconeverify.png")} style={estilo.icon}/>
+            </View>
+          </View>
+        
+
+          <View>
+          
+            <Text style={estilo.redbox}>
+              Premiere
+            </Text>
+            <Image source={{uri:"https://pbs.twimg.com/media/Eemw57vWoAArZGM.jpg"}} style={estilo.imgstories}/>
+            <View style={estilo.txticon}>
+              <Text style={estilo.txt}>Savana</Text>
+              <Image source={require("./assets/iconeverify.png")} style={estilo.icon}/>
+            </View>
+          </View>
+
+          <View>
+          <Text style={estilo.blackbox}>
+              Live
+            </Text>
+            <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIhwmcGRmf8ml33xfXBLfoG-XXAQZdjfxPQQ&usqp=CAU"}} style={estilo.imgstories}/>
+            <View style={estilo.txticon}>
+              <Text style={estilo.txt}>casal</Text>
+              <Image source={require("./assets/iconeverify.png")} style={estilo.icon}/>
+            </View>
+          </View>
+
+          <View>
+          <Text style={estilo.blackbox}>
+              Live
+            </Text>
+            <Image source={{uri:"https://parquevilavelha.com.br/wp-content/uploads/2021/03/wallpaper-vertical-arenitos.jpg"}} style={estilo.imgstories}/>
+            <View style={estilo.txticon}>
+              <Text style={estilo.txt}>trilha</Text>
+              <Image source={require("./assets/iconeverify.png")} style={estilo.icon}/>
+            </View>
+          </View>
+
+          <View>
+          <Text style={estilo.blackbox}>
+              Live
+            </Text>
+            <Image source={{uri:"https://static.vecteezy.com/ti/fotos-gratis/p1/825013-mulher-mochileiro-em-trilha-ama-dablam-montanha-vertical-foto.jpg"}} style={estilo.imgstories}/>
+            <View style={estilo.txticon}>
+              <Text style={estilo.txt}>Savana</Text>
+              <Image source={require("./assets/iconeverify.png")} style={estilo.icon}/>
+            </View>
+          </View>
+
+        </ScrollView>
+
+
+      </View>
+
     </View>
   );
 }

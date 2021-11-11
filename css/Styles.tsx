@@ -122,7 +122,92 @@ export const estilo = StyleSheet.create({
        
         flexDirection:"row",
         
+    },
+
+    treding:{
+    
+    },
+
+    cxtitulo:{
+        flexDirection:"row",
+        alignItems:'center',
+        marginTop:30,
+        marginBottom:30
+    },
+
+    trendingtitulo:{
+        fontSize:30,
+        color:"#989cac",
+        paddingLeft:10,
+    },
+    
+more:{
+    width:60,
+    height:10,
+    resizeMode:'contain',
+    marginLeft:'auto',
+    paddingRight:10
+    },
+
+    cxtrendingdetalhe:
+    { backgroundColor:"#403d40",
+    borderRadius:20,
+    padding:10,
+    width:'90%',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+
+    },
+    detalheimg:{
+        width:'100%',
+        height:300,
+        borderRadius:20,
+        resizeMode:'cover'
+
+    },
+    // 
+    detalhelike:{
+        backgroundColor:'#ff6',
+        padding:10,
+        borderRightWidth:5,
+        borderColor:'rgba(255,255,100,0.7)',
+        position:"absolute",
+        zIndex:1000,
+        bottom:0,
+        right:0,
+        borderBottomRightRadius:10,
+        borderTopLeftRadius:5,
+        textAlign:"center"
+
+    },
+    trendingusuario:{
+        flexDirection:'row',
+        marginTop:20,
+        marginBottom:20,
+    },
+    trendingusuarioimg:{
+        width:50,
+        height:50,
+        borderRadius:20,
+        resizeMode:'contain',
+        marginRight:10
+
+    },
+    trendingusuariotitulo:{
+        fontSize:20,
+        color:'#989cac',
+        fontWeight:'bold'
+
+    },
+    trendingobs:{
+        color:'#989cac'
+
+    },
+    trendingusuariosub:{
+        color:'#989cac'
+
     }
+     
     
    
 
